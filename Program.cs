@@ -91,7 +91,7 @@ namespace Telegram_CLI
             {
                 BOTTOKEN = Environment.GetEnvironmentVariable("BOTTOKEN", EnvironmentVariableTarget.User);
                 BOTPASSWORD = Environment.GetEnvironmentVariable("BOTPASSWORD", EnvironmentVariableTarget.User);
-                int.Parse(Environment.GetEnvironmentVariable("API_ID", EnvironmentVariableTarget.User),(System.Globalization.NumberStyles) API_ID);
+                int.TryParse(Environment.GetEnvironmentVariable("API_ID", EnvironmentVariableTarget.User), out API_ID);
                 API_HASH = Environment.GetEnvironmentVariable("API_HASH", EnvironmentVariableTarget.User);
                 PHONE = Environment.GetEnvironmentVariable("PHONE", EnvironmentVariableTarget.User);
                 return true;
