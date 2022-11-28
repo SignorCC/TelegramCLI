@@ -26,7 +26,6 @@ namespace Telegram_CLI
 
         private WrapperClient(string botToken, int API_ID, string API_HASH, string PHONE, string BOTPASSWORD)
         {
-            //this.config = config;
             this.botToken = botToken;
             this.API_ID = API_ID;
             this.API_HASH = API_HASH;
